@@ -20,11 +20,12 @@ public class ManyThirstyPeople {
         try {
             // put enough drinks in the fridge to start
             requests.put(-N);
-
+            System.out.println(replies.take());
+            
             // send the requests
             for (int x = 1; x <= N; ++x) {
                 requests.put(1); // give me 1 drink!
-                System.out.println("person #" + x + " looked for a drink");
+                System.out.println("person #" + x + " is looking for a drink");
             }
             // collect the replies
             for (int x = 1; x <= N; ++x) {
